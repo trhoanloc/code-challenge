@@ -1,24 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import CurrencySwap from "./components/CurrencySwap";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <form action={() => console.log("swap")}>
-        <h5>Swap</h5>
-        <label htmlFor="input-amount">Amount to send</label>
-        <input id="input-amount" />
-
-        <label htmlFor="output-amount">Amount to receive</label>
-        <input id="output-amount" />
-
-        <button>CONFIRM SWAP</button>
-      </form>
-    </>
+    <div className="size-full flex items-center justify-center bg-linear-to-br p-4">
+      <CurrencySwap />
+    </div>
   );
 }
 
